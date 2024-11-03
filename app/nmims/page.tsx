@@ -63,7 +63,7 @@ const page = () => {
                                         30% students who cannot really get past the interviews due to skill mismatch or communication skills
                                         gap,  etc. So this kind of opt out message is not forced and is not a pressure tactic. It&apos;s the college saying
                                         I have tried my best to get companies to the college and give you enough opportunities to get through,
-                                        but now even I can&apos;t help you since I cannot guarantee more companies in the future since it's already
+                                        but now even I can&apos;t help you since I cannot guarantee more companies in the future since it&apos;s already
                                         2-3 months past the placement start date.
                                     </p>
                                 </li>
