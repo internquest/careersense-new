@@ -61,17 +61,17 @@ const page = () => {
                                     </div>
                                     <div className='mx-auto  h-full bg-[#FFFFFF]  pt-[1rem] px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
-                                            <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal tracking-tight my-5  `}>NMIMS Hyderabad asks unplaced students to “opt out” of place...</h2>
-                                            <h3 className={`${DMSansReg.className} text-[#100C0ACC]/[.8] font-normal text-[1.3rem] leading-[2] w-[799px] tracking-tight `}>Here’s a post to give you an idea about how many colleges manipulate their placement
-                                                statistics to show 100% placements</h3>
+                                            <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal tracking-tight my-5  `}>{post?.title}</h2>
+                                            <h3 className={`${DMSansReg.className} text-[#100C0ACC]/[.8] font-normal text-[1.3rem] leading-[2] w-[799px] tracking-tight `}>{post && post["full-desc"]}</h3>
                                             <div className='flex gap-4'>
 
-                                                <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
-                                                    {/* <img src={corporateicon} alt='' className='inline-block' /> */}
-                                                    b-school</div>
-                                                <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
-                                                    {/* <img src={corporateicon} alt='' className='inline-block' /> */}
-                                                    placement-stats</div>
+                                                {
+                                                    post?.tags?.map((tag, id) => (
+                                                        <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`} key={id}>
+                                                            {tag}
+                                                        </div>
+                                                    ))
+                                                }
 
                                             </div>
                                         </div>
@@ -82,13 +82,22 @@ const page = () => {
 
                                 <li className='relative overflow-hidden min-w-[900px] max-w-[1280px] border-2 h-[320px] border-solid border-black   mx-0 shadow-[0_1px_2px_0px_rgba(60,64,67,0.3),0_1px_3px_1px_rgba(60,64,67,.15)] bg-[#FFFBF8]'>
 
-                                    <div className={`${DMSansReg.className} font-normal text-[20px]  tracking-[.005em] mt-14 mx-4 h-[245px] bg-[#83DCB6] px-8 py-8 leading-[2]`}>Seeing 100% placement reports from B-schools, you might assume that it’s worth
-                                        pursuing MBA & you will definitely get placed at the end, but the reality is completely
-                                        different. It’s time you start thinking and stop falling for not so true placement stats
-                                        of B-schools </div>
+                                    <div className={`${DMSansReg.className} font-normal text-[20px]  tracking-[.005em] mt-14 mx-4 h-[245px] bg-[#83DCB6] px-8 py-8 leading-[2]`}>{post && post["main-desc"]} </div>
                                 </li>
 
                                 <li className='bg-green-50 px-3'>It’s time to understand & rethink by reading these comments</li>
+
+
+                                {/* {
+                                    post?.comments?.map((comment, id) => (
+                                        <li className='relative overflow-hidden min-w-[900px] max-w-[1280px] border-2 h-[168px] border-solid border-black   mx-0 shadow-[0_1px_2px_0px_rgba(60,64,67,0.3),0_1px_3px_1px_rgba(60,64,67,.15)] bg-[#FFFBF8]' key={id}>
+                                            <p className={`${SchibstedGroteskMedium.className} font-normal text-[1.1rem] leading-[2] w-[783px] tracking-tighter px-6 py-6 text-[#100C0A]`}>
+
+                                                {comment?.comment}
+                                            </p>
+                                        </li>
+                                    ))
+                                } */}
 
                                 <li className='relative overflow-hidden min-w-[900px] max-w-[1280px] border-2 h-[168px] border-solid border-black   mx-0 shadow-[0_1px_2px_0px_rgba(60,64,67,0.3),0_1px_3px_1px_rgba(60,64,67,.15)] bg-[#FFFBF8]'>
                                     <p className={`${SchibstedGroteskMedium.className} font-normal text-[1.1rem] leading-[2] w-[783px] tracking-tighter px-6 py-6 text-[#100C0A]`}>
