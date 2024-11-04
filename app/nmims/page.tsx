@@ -1,7 +1,50 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import { DMSansReg, ProductSansReg, QuandoRegular, SchibstedGroteskMedium } from '../fonts/fonts'
+import { FullPost } from '@/lib/types';
+import { PostgrestError } from '@supabase/supabase-js';
+import { supabase } from '@/lib/supabaseClient';
+import { usePathname } from 'next/navigation';
+
+
+
+type fullPostsResponse = {
+    data: FullPost | null;   // Array of Post objects or null if empty
+    error: PostgrestError | null;  // Supabase error type
+}
 
 const page = () => {
+    const pathname = usePathname()
+    const [post, setPost] = useState<FullPost | null>(null)
+    const [error, setError] = useState<string | null>(null)
+
+    useEffect(() => {
+        const slug = pathname.split('/').pop()
+
+        if (slug) {
+            fetchPostBySlug(slug)
+        }
+    }, [pathname])
+
+    async function fetchPostBySlug(slug: string) {
+        const { data: post, error }: fullPostsResponse = await supabase
+            .from('posts')
+            .select('title, full-desc, main-desc, tags, slug, comments')
+            .eq('slug', slug)
+            .single()
+
+        if (error) {
+            console.error('Error fetching post:', error)
+            setError(error.message)
+        } else {
+            setPost(post)
+        }
+    }
+
+    console.log(post);
+
+
+
     return (
         <div className={`${DMSansReg.className}  `}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
