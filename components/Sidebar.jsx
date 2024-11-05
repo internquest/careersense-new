@@ -47,7 +47,7 @@ const Sidebar = () => {
             <div className='mt-28 flex w-full items-start px-3 flex-col gap-6'>
                 {
                     navitems.map((navitem, index) =>
-                        <Link href={navitem.path} className={`${SchibstedGroteskMedium.className} font-normal text-[1.0625rem] leading-[1.5] ${'/' + parentPath[1] === navitem.path ? 'bg-[#83DCB6] text-[#242622]' : 'text-[#CFFAAB]'}   w-[209px] whitespace-pre`}>
+                        <Link href={navitem.path} key={index} className={`${SchibstedGroteskMedium.className} font-normal text-[1.0625rem] leading-[1.5] ${'/' + parentPath[1] === navitem.path ? 'bg-[#83DCB6] text-[#242622]' : 'text-[#CFFAAB]'}   w-[209px] whitespace-pre`}>
                             <p className='pl-3 my-2'>
                                 {navitem.navName}
                             </p>

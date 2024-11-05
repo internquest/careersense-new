@@ -62,7 +62,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
                                 <li className={`${QuandoRegular.className} font-normal text-[1.125rem] my-3 leading-[1.4rem] tracking-tight`}>It’s time to understand & rethink by reading these comments</li>
 
                                 {
-                                    post?.comments.map((comment) => (<Comment comment={comment} hascorner={false} lastone={false} />))
+                                    post?.comments.map((comment, index) => (<Comment key={index} comment={comment} hascorner={false} lastone={false} />))
                                 }
 
                                 {/* <li className='relative overflow-hidden min-w-[900px] max-w-[1280px] border-2 h-min border-solid border-black   mx-0 pb-3 pr-3  bg-[#FFFBF8]'>
