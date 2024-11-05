@@ -40,8 +40,8 @@ const page = () => {
             {/* <div className='absolute grid w-full h-full z-[-1]'></div> */}
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
-                <div className=' w-[200px] bg-inherit z-[1] '></div>
-                <div className='flex ml-[200px] bg-[#f8f9fa] bg-inherit rounded-[12px] relative w-full '>
+                {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}
+                <div className='flex  bg-[#f8f9fa] bg-inherit rounded-[12px] relative w-full '>
                     <main className=' h-full py-[1.5rem] '>
                         <div className='my-0 mx-auto py-0 px-[3rem] h-full max-w-[1280px] min-w-[900px]'>
                             <ul className='my-[-1.5rem] mx-0'>

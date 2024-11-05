@@ -2,13 +2,8 @@
 import { DMSansMed, DMSansReg, QuandoRegular, SchibstedGroteskMedium } from "@/app/fonts/fonts";
 import React, { useState } from "react";
 import parse from 'html-react-parser';
+import { CommentProps } from "@/lib/types";
 
-export interface CommentProps {
-  id: number;
-  text: string;
-  children?: CommentProps[];
-
-}
 
 const Comment: React.FC<{ comment: CommentProps, hascorner: Boolean, lastone: Boolean }> = ({ comment, lastone, hascorner }) => {
 

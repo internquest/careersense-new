@@ -17,6 +17,7 @@ export const Roboto = localFont({
 });
 export const QuandoRegular = localFont({
     src: "./Quando-Regular.ttf",
+    variable: "--font-QuandoRegular",
 });
 export const SchibstedGroteskMedium = localFont({
     src: "./SchibstedGrotesk-Medium.ttf",
