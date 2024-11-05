@@ -6,7 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  safelist: ['flex-grow-0', 'flex-shrink-0', 'basis-auto', 'bg-[#CEFFA5]', 'px-[2rem]', 'py-[1.5rem]', 'p-[.75rem]', 'border-b ', 'border-solid', 'border-black'],
+  safelist: ['flex-grow-0', 'text-[1.4rem]', 'flex-shrink-0', 'basis-auto', 'bg-[#CEFFA5]', 'px-[2rem]', 'py-[1.5rem]', 'p-[.75rem]', 'border-b ', 'border-solid', 'border-black'],
   theme: {
     extend: {
       fontFamily: {
