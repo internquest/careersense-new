@@ -18,7 +18,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
     const { data: post, error }: fullPostResponse = await supabase
         .from('social-proof-posts')
-        .select('full-title, full-desc,proof-main-content, tags, slug, comments')
+        .select('full-title, full-desc,proof-main-content, tags, slug, comments,main-desc')
         .eq('slug', slug)
         .single()
 
@@ -52,10 +52,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
                                 <li className='relative overflow-hidden min-w-[900px] max-w-[1280px] border-2 h-[320px] border-solid border-black   mx-0 my-2 bg-[#FFFBF8]'>
 
                                     <div className={`${DMSansReg.className} font-normal text-[20px] leading-[1.65rem] tracking-tight  mt-14 mx-4 h-[245px] bg-[#83DCB6] px-10 py-8 `}>
-                                        <p className='w-[771px] tracking-[-.01em] text-[#102415] leading-[2.2]'>Seeing 100% placement reports from B-schools, you might assume that it’s worth
-                                            pursuing MBA & you will definitely get placed at the end, but the reality is completely
-                                            different. It’s time you start thinking and stop falling for not so true placement stats
-                                            of B-schools </p>
+                                        <p className='w-[771px] tracking-[-.01em] text-[#102415] leading-[2.2]'>{post ? post['main-desc'] : ''}</p>
                                     </div>
                                 </li>
 

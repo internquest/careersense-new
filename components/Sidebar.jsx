@@ -11,25 +11,25 @@ const Sidebar = () => {
     },
     {
         navName: 'Jobs Intel',
-        path: '/'
+        path: '/jobintel'
     }
         ,
     {
         navName: 'Work Ex Intel',
-        path: '/'
+        path: '/workintel'
     }
         ,
     {
         navName: 'Internshala Insights',
-        path: '/'
+        path: ''
     },
     {
         navName: 'Wisdom Watch',
-        path: '/'
+        path: ''
     },
     {
         navName: 'Wise Words',
-        path: '/'
+        path: ''
     },
     {
         navName: 'Interview Questions',
