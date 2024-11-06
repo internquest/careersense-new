@@ -23,27 +23,27 @@ const page = () => {
 
                                     <div className='mx-auto  h-full bg-[#FFFBF8]  pt-[1rem] px-[2rem] pb-[2.5rem]'>
                                         <div className='px-1 flex flex-col gap-1'>
-                                            <h2 className={`${SchibstedGroteskregular.className} text-[#242622]/[.9] text-start text-[1.5rem] leading-[1.5rem] font-semibold tracking-[-.005em] my-5 w-[513px] `}>In one minute, describe your work experience</h2>
+                                            <h2 className={`${SchibstedGroteskregular.className} text-[#242622]/[.9] text-start text-[1.5rem] leading-[1.5rem] font-semibold tracking-normal my-5 w-[513px] `}>In one minute, describe your work experience</h2>
 
                                             <div className=' gap-2'>
                                                 <Image src={meta} alt='' className=' mx-1 inline-block' />
                                                 <Image src={google} alt='' className=' mx-1 inline-block' />
                                                 <Image src={amazon} alt='' width={30} height={30} className='inline-block ' />
                                             </div>
-                                            <p className={`${SchibstedGroteskMedium.className} font-medium text-[1rem] text-[#0867DF] tracking-[-.02em] mt-6`}>This question has been asked at other companies in different words </p>
+                                            <p className={`${SchibstedGroteskMedium.className} font-medium text-[1rem] text-[#0867DF] tracking-normal mt-6`}>This question has been asked at other companies in different words </p>
                                         </div>
 
                                         <div className={`${SchibstedGroteskregular.className} flex flex-col mt-3 text-[#242622] w-full gap-1`}>
 
                                             <div className='px-1 py-2 border-b w-full border-[#D7D7D7]'>
-                                                <p className='text-[1.125rem] leading-[1.5] tracking-tight font-normal'>Give a brief description of your work experience</p>
+                                                <p className='text-[1.125rem] leading-[1.5] tracking-normal font-normal'>Give a brief description of your work experience</p>
                                             </div>
                                             <div className='px-1 py-4 border-b w-full border-[#D7D7D7]'>
-                                                <p className='text-[1.125rem] leading-[1.5] tracking-tight font-normal w-[738px]'>How would you summarize your professional experience, and what would you highlight as
+                                                <p className='text-[1.125rem] leading-[1.5] tracking-normal font-normal w-[738px]'>How would you summarize your professional experience, and what would you highlight as
                                                     your most notable achievements?</p>
                                             </div>
                                             <div className='px-1 py-4 border-b w-full border-[#D7D7D7]'>
-                                                <p className='text-[1.125rem] leading-[1.5] tracking-tight font-normal w-[801px]'>What have been your most impactful roles, and what skills have you developed in those positions?</p>
+                                                <p className='text-[1.125rem] leading-[1.5] tracking-normal font-normal w-[801px]'>What have been your most impactful roles, and what skills have you developed in those positions?</p>
                                             </div>
 
                                         </div>

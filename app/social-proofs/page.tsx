@@ -51,10 +51,10 @@ const page = async () => {
                                                     <div className='mx-auto  h-full bg-[#FFFBF8]  pt-[1rem] px-[1.5rem] pb-[.3rem]'>
                                                         <div className=''>
 
-                                                            <h3 className={`${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1.125rem] leading-[2] w-[799px] tracking-tight `}>{post?.['short-desc']}</h3>
+                                                            <h3 className={`${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1.125rem] leading-[2] w-[799px] tracking-normal `}>{post?.['short-desc']}</h3>
                                                             <div className='flex gap-4'>
                                                                 {
-                                                                    post?.tags?.map((tag, index) => <div key={index} className={`${SchibstedGroteskregular.className} text-start text-[1.125rem] text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                                                    post?.tags?.map((tag, index) => <div key={index} className={`${SchibstedGroteskregular.className} text-start text-[1rem] text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
 
                                                                         {tag}</div>)
                                                                 }

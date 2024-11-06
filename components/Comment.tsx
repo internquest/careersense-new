@@ -18,7 +18,7 @@ const Comment: React.FC<{ comment: CommentProps, hascorner: Boolean, lastone: Bo
   return (
     <div >
       <li className={`relative   p-1  max-w-[1000px] border-2 h-min border-solid border-black   mx-0    bg-[#FFFBF8] ${lastone ? 'shaddow' : ''}  ${hascorner ? 'corner' : ''}`}>
-        <div className={` font-normal [&>ol]:list-decimal [&>ol]:ml-8 text-[1.065rem] leading-[1.7] w-auto tracking-[-.005em] mx-5 my-[15px] mr-8 py-1 text-[#100C0A]/[.9]`}>
+        <div className={` font-normal [&>ol]:list-decimal [&>ol]:ml-8 text-[.875rem] leading-[1.7] w-auto tracking-normal mx-5 my-[15px] mr-8 py-1 text-[#100C0A]/[.9]`}>
           {parse(comment.text)}
         </div>
       </li>

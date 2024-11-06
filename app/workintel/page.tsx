@@ -2,6 +2,90 @@ import React from 'react'
 import { SchibstedGroteskregular } from '../fonts/fonts'
 
 const page = () => {
+
+
+    const data = [
+        {
+            "Job Title": "SDE-1 Python Developer",
+            "Company Name": "Panasonic",
+            "YOE Requirements": "0-3 yoe"
+        },
+        {
+            "Job Title": "SDE I - Android",
+            "Company Name": "Inmobi",
+            "YOE Requirements": "1+ yoe"
+        },
+        {
+            "Job Title": "Backend Developer",
+            "Company Name": "CRED",
+            "YOE Requirements": "1-3 yoe"
+        },
+        {
+            "Job Title": "Software Engineer (Frontend) - SCM IB",
+            "Company Name": "Myntra",
+            "YOE Requirements": "1+ yoe"
+        },
+        {
+            "Job Title": "Data Scientist 1",
+            "Company Name": "Zeta",
+            "YOE Requirements": "6m"
+        },
+        {
+            "Job Title": "UX Designer I",
+            "Company Name": "Zeta",
+            "YOE Requirements": "0-2 yoe"
+        },
+        {
+            "Job Title": "Software Development Engineer I",
+            "Company Name": "Zeta",
+            "YOE Requirements": "1+ yoe"
+        },
+        {
+            "Job Title": "Business Intelligence Engineer I",
+            "Company Name": "Zeta",
+            "YOE Requirements": "0-6m"
+        },
+        {
+            "Job Title": "Site Reliability Engineer I (Payzapp)",
+            "Company Name": "Zeta",
+            "YOE Requirements": "1-2 yoe"
+        },
+        {
+            "Job Title": "Machine Learning Engineer 1 - DSP",
+            "Company Name": "Swiggy",
+            "YOE Requirements": "0-1 yoe"
+        },
+        {
+            "Job Title": "Software Engineer, Machine Learning",
+            "Company Name": "LinkedIn",
+            "YOE Requirements": "2+ yoe"
+        },
+        {
+            "Job Title": "Data Scientist - I",
+            "Company Name": "Swiggy",
+            "YOE Requirements": "0-2 yoe"
+        },
+        {
+            "Job Title": "Software Development Engineer - 1",
+            "Company Name": "Cleartrip",
+            "YOE Requirements": "1+ yoe"
+        },
+        {
+            "Job Title": "Web Developer",
+            "Company Name": "Groww",
+            "YOE Requirements": "1+ yoe"
+        },
+        {
+            "Job Title": "SDE-1",
+            "Company Name": "ShareChat",
+            "YOE Requirements": "1-3 yoe"
+        },
+        {
+            "Job Title": "Software Engineer, YouTube",
+            "Company Name": "Google",
+            "YOE Requirements": "1+ yoe"
+        }
+    ]
     return (
         <div className={`${SchibstedGroteskregular.className} mx-auto `}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
@@ -15,8 +99,30 @@ const page = () => {
                                     {/* <div className='grid grid-rows-[repeat(3,min-content)] grid-cols-[repeat(3,min-content)]'>
                   <div></div>
                 </div> */}
-                                    <div className=' pt-36 [&>div]:border-t [&>div]:border-[#D7D7D7] w-full [&>div]:last-of-type:border-b  text-[#100C0A]  bg-[#FFFBF8] h-[720px]' >
-                                        <div className='flex  items-center gap-5 px-3 py-2 '>
+                                    <div className=' pt-36 [&>div]:border-t [&>div]:border-[#D7D7D7] w-full [&>div]:last-of-type:border-b  text-[#100C0A]  bg-[#FFFBF8] min-h-[720px]' >
+
+                                        {
+                                            data.map((item, index) => {
+                                                return (
+                                                    <div className='flex  items-center gap-5 px-3 py-2 '>
+                                                        <div className=' flex-shrink-0 flex-grow basis-[45%] flex self-center '>
+
+                                                            <div className={` ${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1rem] tracking-normal leading-[2rem] `}>{item['Job Title']}</div>
+                                                        </div>
+                                                        <div className={`self-center flex-shrink-0 flex-grow basis-[35%] flex  ${SchibstedGroteskregular.className} text-[#00133B]/[.9] text-[16px] font-semibold tracking-normal leading-[1.45rem] w-[243px]`}>{item['Company Name']}</div>
+
+                                                        <div className={`${SchibstedGroteskregular.className} flex self-end flex-col flex-shrink-0 flex-grow basis-[15%]`}>
+                                                            <p className=' bg-[#ACFAA8] text-[1rem] font-medium tracking-normal h-[30px] text-[#100C0A] leading-[1.45] self-center w-[70px] whitespace-nowrap  px-2 py-2 flex justify-center items-center'>
+                                                                {item['YOE Requirements']}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                )
+                                            })
+                                        }
+
+
+                                        {/* <div className='flex  items-center gap-5 px-3 py-2 '>
                                             <div className=' flex-shrink-0 flex-grow basis-[45%] flex self-center '>
 
                                                 <div className={` ${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1rem] tracking-normal leading-[2rem] `}>Software Development Engineer I</div>
@@ -55,28 +161,9 @@ const page = () => {
                                                     0-1 yoe
                                                 </p>
                                             </div>
-                                        </div>
-
-                                        {/* <div className='flex gap-5 '>
-                                            <div className='w-[350px] flex justify-start '>
-                                                <div className={` ${QuandoRegular.className} w-[331px] px-0   text-[#100C0A] font-normal tracking-tight text-[1rem] leading-[2rem] py-4`}>Junior Merchandise Designer(Fashion
-                                                    Designer)</div>
-                                            </div>
-                                            <div className=' flex self-center text-[#141417E5]/[.9] py-4 text-[18px] leading-[1.45rem] w-[243px]'>K.S.E. INC</div>
-                                            <div className={`${DMSansMed.className} bg-[#ACFAA8]  text-[1.25rem] font-medium tracking-tight leading-[1.65rem] flex justify-center self-center items-center h-[45px] w-[102px] px-2 py-2`}>1-4 yoe</div>
-
-                                        </div>
-
-
-                                        <div className='flex gap-5 '>
-                                            <div className='w-[350px] self-center flex '>
-                                                <div className={` ${QuandoRegular.className} text-[1rem] leading-[2rem] w-[307px] tracking-tight py-4`}>Customer Service Process Associate
-                                                    (Voice-English)</div>
-                                            </div>
-                                            <div className=' flex  self-center text-[#141417E5]/[.9] text-[1.125rem] whitespace-pre-wrap leading-[1.45rem] text-[#100C0A] font-normal tracking-tight w-[243px]'>Genpact India Private Limited</div>
-                                            <div className={`${DMSansMed.className} bg-[#ACFAA8]  text-[1.25rem] font-medium tracking-tight leading-[1.65rem] self-center h-[45px] w-[102px] px-2 py-2 flex justify-center items-center`}>0-1 yoe</div>
-
                                         </div> */}
+
+
                                     </div>
                                 </li>
 

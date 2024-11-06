@@ -13,7 +13,7 @@ const page = () => {
                             <ul className='my-[-1.5rem] mx-0'>
                                 <li className='relative border-2 border-solid  max-w-[1280px] min-w-[900px] bg-[#FFFBF8] border-black  my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0  flex-shrink-0 basis-auto   px-[2rem] py-[1.5rem]  p-[.75rem]  '>
-                                        <h2 className={` text-start leading-[2rem] font-normal text-[#141417] text-[1.25rem] tracking-tight w-[754px]`}>Why Studying In America Will Kill Your Career | H1B Trap: Explained ...</h2>
+                                        <h2 className={` text-start leading-[2rem] font-normal text-[#141417] text-[1.25rem] tracking-normal w-[754px]`}>Why Studying In America Will Kill Your Career | H1B Trap: Explained ...</h2>
                                     </div>
                                     <div className='mx-auto  h-full   px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
@@ -22,7 +22,7 @@ const page = () => {
                                                 {/* <img src={corporateicon} alt='' className='inline-block' /> */}
                                                 Aevy Tv</div>
                                         </div>
-                                        <div className={` ${SchibstedGroteskMedium.className} text-[#24201FBF]/[.75] text-start text-[1.125rem] leading-[2rem] tracking-[-.02em] py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0  `}>
+                                        <div className={` ${SchibstedGroteskMedium.className} text-[#24201FBF]/[.75] text-start text-[1.125rem] leading-[2rem] tracking-normal py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0  `}>
                                             <p className='w-[801px]'>If you&apos;re thinking of going to America for work or a master&apos;s degree, here&apos;s why you might want to
                                                 think again. This video explains the risks of pursuing a ....</p>
                                         </div>

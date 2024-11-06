@@ -44,19 +44,19 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
                         <div className='my-0 mx-auto py-0 px-[3rem] h-full max-w-[1280px] min-w-[900px]'>
                             <ul className='my-[-1.5rem] mx-0 font-schibstereg flex flex-col gap-8'>
 
-                                <li className='relative overflow-hidden min-w-[900px] max-w-[1000px] border-[2.5px] h-min border-solid border-black   mx-0 ' dangerouslySetInnerHTML={{ __html: post ? post?.['proof-main-content'] : '' }} >
+                                <li className='relative overflow-hidden min-w-[900px] text-[15px] max-w-[1000px] border-[2.5px] h-min border-solid border-black    mx-0 ' dangerouslySetInnerHTML={{ __html: post ? post?.['proof-main-content'] : '' }} >
                                     {/* {parse(post ? post?.['proof-main-content'] : '')} */}
 
                                 </li>
 
                                 <li className='relative overflow-hidden min-w-[900px] max-w-[1280px] border-2 h-[320px] border-solid border-black   mx-0 my-2 bg-[#FFFBF8]'>
 
-                                    <div className={` font-normal text-[20px] leading-[1.65rem] tracking-tight  mt-14 mx-4 h-[245px] bg-[#83DCB6] px-10 py-8 `}>
-                                        <p className='w-[771px] tracking-[-.01em] text-[#102415] leading-[2.2]'>{post ? post['main-desc'] : ''}</p>
+                                    <div className={` font-normal text-[20px] leading-[1.65rem] tracking-normal  mt-14 mx-4 h-[245px] bg-[#83DCB6] px-10 py-8 `}>
+                                        <p className='w-[771px] tracking-normal text-[#102415] leading-[2.2]'>{post ? post['main-desc'] : ''}</p>
                                     </div>
                                 </li>
 
-                                <li className={` font-normal text-[1.125rem] my-3 leading-[1.4rem] tracking-tight`}>It’s time to understand & rethink by reading these comments</li>
+                                <li className={` font-normal text-[1.125rem] my-3 leading-[1.4rem] tracking-normal`}>It’s time to understand & rethink by reading these comments</li>
 
                                 {
                                     post?.comments.map((comment, index) => (<Comment key={index} comment={comment} hascorner={false} lastone={false} />))
