@@ -20,7 +20,7 @@ const page = () => {
                                         ML/DL model to production?</h1>
                                 </div>
                                 <div className='bg-[#FEFAF9] px-4 py-6 mt-6'>
-                                    <p>I'd like to describe a project where I successfully deployed a deep learning model to production for a leading
+                                    <p>I&apos;d like to describe a project where I successfully deployed a deep learning model to production for a leading
                                         e-commerce company. The goal of the project was to develop a real-time product recommendation system that
                                         would suggest relevant products to customers based on their browsing and purchase history.</p>
                                     <p className='mt-10'>

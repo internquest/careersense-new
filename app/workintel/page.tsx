@@ -104,7 +104,7 @@ const page = () => {
                                         {
                                             data.map((item, index) => {
                                                 return (
-                                                    <div className='flex  items-center gap-5 px-3 py-2 '>
+                                                    <div key={index} className='flex  items-center gap-5 px-3 py-2 '>
                                                         <div className=' flex-shrink-0 flex-grow basis-[45%] flex self-center '>
 
                                                             <div className={` ${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1rem] tracking-normal leading-[2rem] `}>{item['Job Title']}</div>
