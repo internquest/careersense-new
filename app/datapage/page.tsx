@@ -1,9 +1,9 @@
 import React from 'react'
-import { DMSansReg, ProductSansMed, QuandoRegular, SchibstedGroteskMedium } from '../fonts/fonts'
+import { SchibstedGroteskMedium } from '../fonts/fonts'
 
 const page = () => {
     return (
-        <div className={`${DMSansReg.className}  `}>
+        <div className={`${SchibstedGroteskMedium.className}  `}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}
@@ -13,7 +13,7 @@ const page = () => {
                             <ul className='my-[-1.5rem] mx-0'>
                                 <li className='relative border-2 border-solid  max-w-[1280px] min-w-[900px] bg-[#FFFBF8] border-black  my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0  flex-shrink-0 basis-auto   px-[2rem] py-[1.5rem]  p-[.75rem]  '>
-                                        <h2 className={`${QuandoRegular.className} text-start leading-[2rem] font-normal text-[#141417] text-[1.25rem] tracking-tight w-[754px]`}>Why Studying In America Will Kill Your Career | H1B Trap: Explained ...</h2>
+                                        <h2 className={` text-start leading-[2rem] font-normal text-[#141417] text-[1.25rem] tracking-tight w-[754px]`}>Why Studying In America Will Kill Your Career | H1B Trap: Explained ...</h2>
                                     </div>
                                     <div className='mx-auto  h-full   px-[2rem] pb-[1.5rem]'>
                                         <div className=''>

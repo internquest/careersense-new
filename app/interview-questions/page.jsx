@@ -1,5 +1,5 @@
 import React from 'react'
-import { DMSansReg, QuandoRegular, SchibstedGroteskMedium, SchibstedGroteskregular } from '../fonts/fonts'
+import { SchibstedGroteskMedium, SchibstedGroteskregular } from '../fonts/fonts'
 import Link from 'next/link'
 import amazon from '@/public/interviewqstns/Amazon 1.png'
 import google from '@/public/interviewqstns/Google 1.png'
@@ -7,7 +7,7 @@ import meta from '@/public/interviewqstns/Meta 1.png'
 import Image from 'next/image'
 const page = () => {
     return (
-        <div className={`${DMSansReg.className}  mx-auto`}>
+        <div className={`font-schibstereg  mx-auto`}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}

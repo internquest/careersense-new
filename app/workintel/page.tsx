@@ -1,9 +1,9 @@
 import React from 'react'
-import { DMSansMed, DMSansReg, QuandoRegular, SchibstedGroteskregular } from '../fonts/fonts'
+import { SchibstedGroteskregular } from '../fonts/fonts'
 
 const page = () => {
     return (
-        <div className={`${DMSansReg.className} mx-auto `}>
+        <div className={`${SchibstedGroteskregular.className} mx-auto `}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}

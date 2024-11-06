@@ -1,6 +1,6 @@
 
 export const revalidate = 0
-import { DMSansReg, ProductSansReg, QuandoRegular, SchibstedGroteskMedium } from '../../fonts/fonts'
+
 import parse from 'html-react-parser'
 import Comment from '@/components/Comment';
 import { FullPost } from '@/lib/types';
@@ -35,7 +35,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
 
     return (
-        <div className={`${DMSansReg.className} overflow-hidden  mx-auto `}>
+        <div className={`font-schibstedmed overflow-hidden  mx-auto `}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}

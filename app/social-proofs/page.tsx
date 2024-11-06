@@ -1,6 +1,6 @@
 export const revalidate = 0
 import React from 'react'
-import { DMSansReg, ProductSansReg, QuandoRegular, SchibstedGroteskMedium, SchibstedGroteskregular } from '../fonts/fonts'
+import { SchibstedGroteskregular } from '../fonts/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import { PostgrestError } from '@supabase/supabase-js'
@@ -30,7 +30,7 @@ const page = async () => {
         return <div>Error loading posts</div>;
     }
     return (
-        <div className={`${DMSansReg.className}  mx-auto`}>
+        <div className={`${SchibstedGroteskregular.className}  mx-auto`}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}

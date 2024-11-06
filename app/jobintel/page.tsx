@@ -1,5 +1,5 @@
 import React from 'react'
-import { DMSansReg, ProductSansMed, ProductSansReg, QuandoRegular, SchibstedGroteskMedium } from '@/app/fonts/fonts'
+import { SchibstedGroteskMedium } from '@/app/fonts/fonts'
 
 const page = () => {
     const cards = [
