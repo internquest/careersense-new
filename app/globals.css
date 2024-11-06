@@ -19,6 +19,14 @@
 /* flex-grow-0 flex-shrink-0 basis-auto bg-[#CEFFA5]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b border-solid border-black */
 
 
+@layer components {
+
+  .jobinteltitle {
+    @apply text-[#100C0ACC] font-schibstedmed text-start text-[1.5rem] leading-[2rem] font-normal
+  }
+
+}
+
 body {
   background-size: 100px 100px;
   background-color: #eafed9;

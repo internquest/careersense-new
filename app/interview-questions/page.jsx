@@ -7,7 +7,7 @@ import meta from '@/public/interviewqstns/Meta 1.png'
 import Image from 'next/image'
 const page = () => {
     return (
-        <div className={`${DMSansReg.className}  `}>
+        <div className={`${DMSansReg.className}  mx-auto`}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}

@@ -36,7 +36,7 @@ const page = () => {
     ]
 
     return (
-        <div className='bg-transparent relative  '>
+        <div className='bg-transparent relative  mx-auto '>
             {/* <div className='absolute grid w-full h-full z-[-1]'></div> */}
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
@@ -44,20 +44,20 @@ const page = () => {
                 <div className='flex  bg-[#f8f9fa] bg-inherit rounded-[12px] relative w-full '>
                     <main className=' h-full py-[1.5rem] '>
                         <div className='my-0 mx-auto py-0 px-[3rem]  max-w-[1000px] h-full '>
-                            <ul className='my-[-1.5rem] mx-0'>
+                            <ul className='my-[-1.5rem] mx-0 font-schibstereg'>
                                 <li className='relative border-2 border-solid border-black min-w-[900px]  my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#A7F9A4]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b-2 border-solid border-black'>
-                                        <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal  `}>SDE 1 - Growth</h2>
+                                        <h2 className={`jobinteltitle  `}>SDE 1 - Growth</h2>
                                     </div>
                                     <div className='mx-auto  h-full bg-[#FFFBF8]  pt-[1rem] px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
 
-                                            <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                            <div className={` text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
                                                 {/* <img src={corporateicon} alt='' className='inline-block' /> */}
                                                 Urban Company</div>
                                         </div>
                                         <div className={`${SchibstedGroteskMedium.className} text-[#100C0ACC]/[.8] text-start  py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0 text-[#202124] `}>
-                                            <h4 className={`${ProductSansReg.className} text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
+                                            <h4 className={` text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
                                             <ol className={`${SchibstedGroteskMedium.className} text-[#100C0ACC]/[.8] pl-[40px] list-decimal`} >
                                                 <li className=' my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal'>
                                                     <p>0-2 years of experience in the industry <strong><em>solving complex problems</em></strong> from scratch</p>
@@ -89,25 +89,25 @@ const page = () => {
 
                                 <li className='relative border-2 border-solid border-black min-w-[900px] my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#A7F9A4]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b-2 border-solid border-black'>
-                                        <h2 className={`${QuandoRegular.className} text-[#100C0ACC]  text-start text-[1.5rem] leading-[2rem] font-normal  `}>AI/ML Research Intern</h2>
+                                        <h2 className={` jobinteltitle  `}>AI/ML Research Intern</h2>
                                     </div>
                                     <div className='mx-auto  h-full bg-[#FFFBF8] pt-[1rem] px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
 
-                                            <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                            <div className={` text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
                                                 {/* <img src={corporateicon} alt='' className='inline-block' /> */}
                                                 SuperKalam </div>
                                         </div>
                                         <div className={` ${SchibstedGroteskMedium.className} text-[#100C0ACC]/[.8] text-start  py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0 text-[#202124] `}>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
+                                            <h4 className={`  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
                                             <ol className='pl-[40px]  my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal list-decimal' >
                                                 <li><p><strong>Prior Internship</strong> in AI/ML or <strong>quality projects</strong> done in AI/ML using Python/NodeJS</p></li><li><p>Working knowledge of - LLMs, RAG, vector DBs, etc.</p></li><li><p>Basic software engineering - relational database, understanding of rate limiting, basics of security.</p></li>
                                             </ol>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] mt-3 tracking-[.00625em] mb-[.5rem]`}>Responsibilities:</h4>
+                                            <h4 className={`  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] mt-3 tracking-[.00625em] mb-[.5rem]`}>Responsibilities:</h4>
                                             <ul className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>Running AI experiments, fine tuning</p></li><li><p>Research and implement appropriate approaches from research papers/blogs.</p></li>
                                             </ul>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] mt-3 tracking-[.00625em] mb-[.5rem]`}>About the interview:</h4>
+                                            <h4 className={`  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] mt-3 tracking-[.00625em] mb-[.5rem]`}>About the interview:</h4>
                                             <p className='text-[1.1rem] font-normal leading-[1]'>You resume will be shortlisted as per your projects or <strong>prior internship experience</strong>.</p>
                                         </div>
                                         {/* 
@@ -131,22 +131,22 @@ const page = () => {
 
                                 <li className='relative border-2 border-solid border-black  my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#A7F9A4]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b-2 border-solid border-black'>
-                                        <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal  `}>AI Research Intern</h2>
+                                        <h2 className={`jobinteltitle  `}>AI Research Intern</h2>
                                     </div>
                                     <div className='mx-auto bg-[#FFFBF8] h-full  pt-[1rem] px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
 
-                                            <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                            <div className={` text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
                                                 {/* <img src={corporateicon} alt='' className='inline-block' /> */}
                                                 2070 Health </div>
                                         </div>
                                         <div className={` ${SchibstedGroteskMedium.className} text-[#100C0ACC]/[.8] text-start  py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0 text-[#202124] `}>
                                             <p className='font-normal text-[1.1rem] leading-[1.5] tracking-[.01em]'>The AI Research Intern will contribute to our ongoing projects by applying AI &amp; ML algorithms to solve challenging problems in healthcare.</p>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.2rem] mt-3 leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
+                                            <h4 className={`  text-[1.2rem] mt-3 leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
                                             <ol className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>Currently pursuing or recently completed a master’s or PhD in Computer Science or a related field with a focus on artificial intelligence or machine learning.</p></li><li><p><strong>Demonstrated experience</strong> in machine learning, deep learning, natural language processing, or computer vision.</p></li><li><p>Familiarity with platforms like HuggingFace, AWS and GCP.</p></li><li><p>Proficiency in programming languages such as Python and experience with AI frameworks (e.g., TensorFlow, PyTorch).</p></li>
                                             </ol>
-                                            <h4 className={`${ProductSansReg.className} mt-3  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Responsibilities:</h4>
+                                            <h4 className={` mt-3  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Responsibilities:</h4>
                                             <ol className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>Assist in designing and implementing machine learning models to analyse large datasets in healthcare, such as electronic health records, imaging data, and genomics.</p></li><li><p>Participate in research to explore new AI techniques and methodologies that can be applied to healthcare challenges.</p></li><li><p>Collaborate with the team to improve existing AI models, enhancing their accuracy, efficiency, and clinical relevance.</p></li><li><p>Help in conducting rigorous evaluations of AI models, including statistical analysis and validation against clinical outcomes.</p></li><li><p>Contribute to writing research papers, reports, and proposals for new projects or funding opportunities.</p></li>
                                             </ol>
@@ -173,23 +173,23 @@ const page = () => {
 
                                 <li className='relative border-2 border-solid border-black  my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#A7F9A4]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b-2 border-solid border-black'>
-                                        <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal  `}>AI Threat Modeling Intern</h2>
+                                        <h2 className={`jobinteltitle  `}>AI Threat Modeling Intern</h2>
                                     </div>
                                     <div className='mx-auto  h-full bg-[#FFFBF8] pt-[1rem] px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
 
-                                            <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                            <div className={` text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
                                                 {/* <img src={corporateicon} alt='' className='inline-block' /> */}
                                                 Aristiun </div>
                                         </div>
                                         <div className={` ${SchibstedGroteskMedium.className} text-[#100C0ACC]/[.8] text-start  py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0 text-[#202124] `}>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.3rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Your Mission:</h4>
+                                            <h4 className={`  text-[1.3rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Your Mission:</h4>
                                             <p className='font-normal text-[1.1rem] leading-[1.5] tracking-[.01em]'><strong>Develop AI-Powered Threat Models:</strong></p>
                                             <ol className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>Work with our AI engineers to develop and refine AI models that can automatically generate threat models for software systems, applications, and networks.</p></li><li><p>Explore and implement advanced machine learning techniques to identify potential attack vectors and predict vulnerabilities.</p></li><li><p>Assist in creating and curating datasets for training and evaluating AI threat modeling models.</p></li>
                                             </ol>
                                             <p className='font-normal text-[1.1rem] mt-3 leading-[1.5] tracking-[.01em]'><strong>Enhance Threat Modeling Tools and Processes:</strong></p>
-                                            {/* <h4 className={`${ProductSansReg.className}  text-[1rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]'>Re`}ponsibilities:</h4> */}
+                                            {/* <h4 className={`  text-[1rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]'>Re`}ponsibilities:</h4> */}
                                             <ol className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>Help&nbsp;to improve our existing threat modeling tools and workflows, integrating AI capabilities for greater efficiency and accuracy.</p></li><li><p>Contribute to developing visualizations and dashboards that make threat modeling insights easily accessible to security teams.</p></li>
                                             </ol>
@@ -199,7 +199,7 @@ const page = () => {
                                             </ol>
 
 
-                                            <h4 className={`${ProductSansReg.className}  mt-3 text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Ideal Candidate:</h4>
+                                            <h4 className={`  mt-3 text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Ideal Candidate:</h4>
                                             <p className='font-normal text-[1.1rem] leading-[1.5] tracking-[.01em]'><strong>Experience with Machine Learning (Desired):</strong>&nbsp;Experience with supervised learning, unsupervised learning, or other relevant AI techniques.</p>
                                         </div>
                                         {/* 
@@ -221,25 +221,25 @@ const page = () => {
 
                                 <li className='relative border-2 border-solid border-black  my-[1.5rem] mx-0 '>
                                     <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#A7F9A4]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b-2 border-solid border-black'>
-                                        <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal  `}>AI Engineer</h2>
+                                        <h2 className={`jobinteltitle  `}>AI Engineer</h2>
                                     </div>
                                     <div className='mx-auto  h-full bg-[#FFFBF8] pt-[1rem] px-[2rem] pb-[1.5rem]'>
                                         <div className=''>
 
-                                            <div className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                            <div className={` text-start text-[#CFFAAB] px-4 py-2 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
                                                 {/* <img src={corporateicon} alt='' className='inline-block' /> */}
                                                 Simbian </div>
                                         </div>
                                         <div className={` ${SchibstedGroteskMedium.className} text-[#100C0ACC]/[.8] text-start  py-[1rem] px-[2rem] mt-[1rem] mx-[-2rem] mb-0 text-[#202124] `}>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>What you&apos;ll do:</h4>
+                                            <h4 className={`  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>What you&apos;ll do:</h4>
                                             <ol className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>Develop state-of-the-art AI agents and systems aimed at revolutionizing how security teams detect, triage, and respond to incidents, using models such as LLama, Claude, and GPT-4.</p></li><li><p>Create prototypes and Minimum Viable Products (MVPs) to showcase new AI capabilities in the context of security, focusing on the integration of diverse security tools and data.</p></li><li><p>Design and implement advanced internal agent-based systems for security operations, including anomaly detection, threat intelligence correlation, and automated incident prioritization.</p></li><li><p>Prototype and innovate AI solutions that streamline security processes, enhance detection accuracy, and improve response times.</p></li><li><p>Work closely with product and engineering teams to integrate AI technologies into our security solutions, ensuring they meet high-performance standards and contribute to user-centric outcomes.</p></li>
                                             </ol><p></p>
-                                            <h4 className={`${ProductSansReg.className}  text-[1.2rem] mt-3 leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
+                                            <h4 className={`  text-[1.2rem] mt-3 leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Requirements:</h4>
                                             <ol className='pl-[40px] list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal' >
                                                 <li><p>You are a <strong>hands-on builder </strong>with <strong>experience</strong> in developing AI-driven solutions, proficient in programming with Python and its ecosystem, including AI tools.</p></li><li><p>You have a <strong>strong background in building</strong> applications based on Large Language Models (LLMs) and are familiar with leveraging models like LLama, Claude, and GPT-4 for innovative applications.</p></li><li><p>Your expertise includes working with leading AI technologies and frameworks, such as TensorFlow and PyTorch, with a deep understanding of deep learning principles.</p></li>
                                             </ol>
-                                            <h4 className={`${ProductSansReg.className} mt-3  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Here are questions asked in the job application:</h4>
+                                            <h4 className={` mt-3  text-[1.2rem] leading-[1.5rem] font-semibold text-[#202124] tracking-[.00625em] mb-[.5rem]`}>Here are questions asked in the job application:</h4>
                                             <ol className='pl-[40px] [&>*]:list-decimal my-1 leading-[1.5rem] text-[1.1rem] tracking-[.00625em] font-normal'><li><p>Explain an LLM app that you have put together on your own. Describe its overall context management strategy in less than 200 words.</p></li><li><p>Have you ever fine-tuned an LLM? If so, what are some best practices you have picked up for it?</p></li></ol>
                                         </div>
 

@@ -1,6 +1,6 @@
 export const revalidate = 0
 import React from 'react'
-import { DMSansReg, ProductSansReg, QuandoRegular, SchibstedGroteskMedium } from '../fonts/fonts'
+import { DMSansReg, ProductSansReg, QuandoRegular, SchibstedGroteskMedium, SchibstedGroteskregular } from '../fonts/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import { PostgrestError } from '@supabase/supabase-js'
@@ -30,7 +30,7 @@ const page = async () => {
         return <div>Error loading posts</div>;
     }
     return (
-        <div className={`${DMSansReg.className}  `}>
+        <div className={`${DMSansReg.className}  mx-auto`}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}
@@ -44,17 +44,17 @@ const page = async () => {
                                     posts?.map((post: Post, index) => {
                                         return (
                                             <Link href={`/social-proofs/${post?.slug}`} key={index} target='_blank'>
-                                                <li className='relative border-2 min-w-[900px] max-w-[1280px] h-[320px] border-solid border-black  overflow-hidden my-[1.5rem] mx-0 '>
-                                                    <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#CEFFA5]  px-[2rem] py-[1.5rem]  p-[.75rem]  border-b-2 border-solid border-black'>
-
+                                                <li className='relative border-2 min-w-[900px] max-w-[1280px] h-min border-solid border-black  overflow-hidden my-[1.5rem] mx-0 '>
+                                                    <div className='flex-grow-0 flex-shrink-0 basis-auto bg-[#A7F9A4]  px-[1.5rem] py-[1.1rem]  p-[.75rem]  border-b-2 border-solid border-black'>
+                                                        <h2 className={`${SchibstedGroteskregular.className} text-[#100C0A]/[.9] text-start text-[1.25rem] leading-[1.2] font-semibold tracking-normal   `}>{post?.['short-title']}</h2>
                                                     </div>
-                                                    <div className='mx-auto  h-full bg-[#FFFBF8]  pt-[1rem] px-[2rem] pb-[1.5rem]'>
+                                                    <div className='mx-auto  h-full bg-[#FFFBF8]  pt-[1rem] px-[1.5rem] pb-[.3rem]'>
                                                         <div className=''>
-                                                            <h2 className={`${QuandoRegular.className} text-[#100C0ACC] text-start text-[1.5rem] leading-[2rem] font-normal tracking-tight my-5  `}>{post?.['short-title']}</h2>
-                                                            <h3 className={`${DMSansReg.className} text-[#100C0ACC]/[.8] font-normal text-[1.3rem] leading-[2] w-[799px] tracking-tight `}>{post?.['short-desc']}</h3>
+
+                                                            <h3 className={`${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1.125rem] leading-[2] w-[799px] tracking-tight `}>{post?.['short-desc']}</h3>
                                                             <div className='flex gap-4'>
                                                                 {
-                                                                    post?.tags?.map((tag, index) => <div key={index} className={`${DMSansReg.className} text-start text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
+                                                                    post?.tags?.map((tag, index) => <div key={index} className={`${SchibstedGroteskregular.className} text-start text-[1.125rem] text-[#CFFAAB] px-4 py-1 my-4 bg-[#2D2D2D] w-min whitespace-pre`}>
 
                                                                         {tag}</div>)
                                                                 }

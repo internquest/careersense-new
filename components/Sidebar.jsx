@@ -43,12 +43,12 @@ const Sidebar = () => {
     // if(parentPath[1]===)
 
     return (
-        <div className='w-[240px] h-screen sticky top-0 bg-[#2C2C2C]  opacity-[1] z-[5] '>
-            <div className='mt-28 flex w-full items-start px-3 flex-col gap-6'>
+        <div className='w-[240px] 2xl:w-[300px] flex h-screen sticky top-0 bg-[#2C2C2C]  opacity-[1] z-[5] '>
+            <div className='mt-28 flex w-full items-start px-3 flex-col gap-3'>
                 {
                     navitems.map((navitem, index) =>
-                        <Link href={navitem.path} key={index} className={`${SchibstedGroteskMedium.className} font-normal text-[1.0625rem] leading-[1.5] ${'/' + parentPath[1] === navitem.path ? 'bg-[#83DCB6] text-[#242622]' : 'text-[#CFFAAB]'}   w-[209px] whitespace-pre`}>
-                            <p className='pl-3 my-2'>
+                        <Link href={navitem.path} key={index} className={`${SchibstedGroteskMedium.className} font-normal text-[1.0625rem] leading-[1.5] ${'/' + parentPath[1] === navitem.path ? 'bg-[#83DCB6] text-[#242622]' : 'text-[#CFFAAB]'} p-2  w-[209px] whitespace-pre`}>
+                            <p className='pl-3 '>
                                 {navitem.navName}
                             </p>
                         </Link >

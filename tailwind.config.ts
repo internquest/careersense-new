@@ -12,6 +12,8 @@ const config: Config = {
       fontFamily: {
         quanreg: ['var(--font-QuandoRegular)'],
         Dmsansreg: ['var(--font-DMSansReg)'],
+        schibstedmed: ['var(--font-SchibstedGroteskMedium)'],
+        schibstereg: ['var(--font-SchibstedGroteskregular)'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -1,32 +1,63 @@
 import React from 'react'
-import { DMSansMed, DMSansReg, QuandoRegular } from '../fonts/fonts'
+import { DMSansMed, DMSansReg, QuandoRegular, SchibstedGroteskregular } from '../fonts/fonts'
 
 const page = () => {
     return (
-        <div className={`${DMSansReg.className}  `}>
+        <div className={`${DMSansReg.className} mx-auto `}>
             <div className='font-black text-[50px] h-[100px]  bg-inherit'></div>
             <div className='flex bg-inherit'>
                 {/* <div className=' w-[200px] bg-inherit z-[1] '></div> */}
                 <div className='flex  bg-[#f8f9fa] bg-inherit rounded-[12px] relative w-full '>
-                    <main className=' h-full py-[1.5rem] '>
-                        <div className='my-0 mx-auto py-0 px-[3rem] h-full max-w-[1280px] min-w-[900px]'>
+                    <main className=' h-full  py-[1.5rem] '>
+                        <div className='my-0 mx-auto py-0   max-w-[1200px] 2xl:min-w-[1080px] min-w-[980px] '>
                             <ul className='my-[-1.5rem] mx-0'>
                                 <li className='relative border-2 border-solid border-black  my-[1.5rem] mx-0 '>
                                     {/* <div className='grid grid-rows-[repeat(3,min-content)] grid-cols-[repeat(3,min-content)]'>
                   <div></div>
                 </div> */}
-                                    <div className='flex flex-col pt-24 gap-6 text-[#100C0A] px-10 bg-[#FFFBF8] h-[800px]' >
-                                        <div className='flex  gap-5 '>
-                                            <div className='w-[350px] flex self-start '>
+                                    <div className=' pt-36 [&>div]:border-t [&>div]:border-[#D7D7D7] w-full [&>div]:last-of-type:border-b  text-[#100C0A]  bg-[#FFFBF8] h-[720px]' >
+                                        <div className='flex  items-center gap-5 px-3 py-2 '>
+                                            <div className=' flex-shrink-0 flex-grow basis-[45%] flex self-center '>
 
-                                                <div className={` ${QuandoRegular.className} text-[#100C0A] font-normal text-[1rem] tracking-tight leading-[2rem] py-4`}>SDE I - Python Developer</div>
+                                                <div className={` ${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1rem] tracking-normal leading-[2rem] `}>Software Development Engineer I</div>
                                             </div>
-                                            <div className='self-center flex py-4 text-[18px] text-[#141417E5]/[.9] leading-[1.45rem] w-[243px]'>Panasonic</div>
+                                            <div className={`self-center flex-shrink-0 flex-grow basis-[35%] flex  ${SchibstedGroteskregular.className} text-[#00133B]/[.9] text-[16px] font-semibold tracking-normal leading-[1.45rem] w-[243px]`}>Zeta</div>
 
-                                            <div className={`${DMSansMed.className} bg-[#ACFAA8] text-[1.25rem] font-medium tracking-tight leading-[1.65rem] self-center h-[45px] w-[102px] px-2 py-2 flex justify-center items-center`}>0-3 yoe</div>
+                                            <div className={`${SchibstedGroteskregular.className} flex self-end flex-col flex-shrink-0 flex-grow basis-[15%]`}>
+                                                <p className=' bg-[#ACFAA8] text-[1rem] font-medium tracking-tight h-[30px] texxt-[#100C0A] leading-[1.45rem] self-center w-[70px]  px-2 py-2 flex justify-center items-center'>
+                                                    1+ yoe
+                                                </p>
+                                            </div>
                                         </div>
 
-                                        <div className='flex gap-5 '>
+                                        <div className='flex  items-center gap-5 px-3 py-2 '>
+                                            <div className=' flex-shrink-0 flex-grow basis-[45%] flex self-center '>
+
+                                                <div className={` ${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1rem] tracking-normal leading-[2rem] `}>Business Intelligence Engineer I</div>
+                                            </div>
+                                            <div className={`self-center flex-shrink-0 flex-grow basis-[35%] flex  ${SchibstedGroteskregular.className} text-[#00133B]/[.9] text-[16px] font-semibold tracking-normal leading-[1.45rem] w-[243px]`}>Zeta</div>
+
+                                            <div className={`${SchibstedGroteskregular.className} flex self-end flex-col flex-shrink-0 flex-grow basis-[15%]`}>
+                                                <p className=' bg-[#ACFAA8] text-[1rem] font-medium tracking-tight h-[30px] texxt-[#100C0A] leading-[1.45rem] self-center w-[70px]  px-2 py-2 flex justify-center items-center'>
+                                                    0-6m
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className='flex  items-center gap-5 px-3 py-2 '>
+                                            <div className=' flex-shrink-0 flex-grow basis-[45%] flex self-center '>
+
+                                                <div className={` ${SchibstedGroteskregular.className} text-[#24201F] font-normal text-[1rem] tracking-normal leading-[2rem] `}>Customer Service Process Associate (Voice-English)</div>
+                                            </div>
+                                            <div className={`self-center flex-shrink-0 flex-grow basis-[35%] flex  ${SchibstedGroteskregular.className} text-[#00133B]/[.9] text-[16px] font-semibold tracking-normal leading-[1.45rem] w-[243px]`}>Genpact India Private Limited</div>
+
+                                            <div className={`${SchibstedGroteskregular.className} flex self-end flex-col flex-shrink-0 flex-grow basis-[15%]`}>
+                                                <p className=' bg-[#ACFAA8] text-[1rem] font-medium tracking-tight h-[30px] texxt-[#100C0A] leading-[1.45rem] self-center w-[70px]  px-2 py-2 flex justify-center items-center'>
+                                                    0-1 yoe
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        {/* <div className='flex gap-5 '>
                                             <div className='w-[350px] flex justify-start '>
                                                 <div className={` ${QuandoRegular.className} w-[331px] px-0   text-[#100C0A] font-normal tracking-tight text-[1rem] leading-[2rem] py-4`}>Junior Merchandise Designer(Fashion
                                                     Designer)</div>
@@ -45,7 +76,7 @@ const page = () => {
                                             <div className=' flex  self-center text-[#141417E5]/[.9] text-[1.125rem] whitespace-pre-wrap leading-[1.45rem] text-[#100C0A] font-normal tracking-tight w-[243px]'>Genpact India Private Limited</div>
                                             <div className={`${DMSansMed.className} bg-[#ACFAA8]  text-[1.25rem] font-medium tracking-tight leading-[1.65rem] self-center h-[45px] w-[102px] px-2 py-2 flex justify-center items-center`}>0-1 yoe</div>
 
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </li>
 
