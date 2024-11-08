@@ -55,6 +55,45 @@ body {
   border-bottom-left-radius: 8px;
 }
 
+.swiper {
+  height: 34em;
+  width: 26em;
+  font-size: 1.0582010582010584vw;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.0582010582010584vw;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 24px;
+  position: relative;
+  transition-property: transform;
+  overflow: hidden;
+  transform-origin: center bottom;
+
+
+  background-color: #e4ece3;
+}
+
+.swiper-wrapper {
+  gap: 1em;
+  align-items: center;
+}
+
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
